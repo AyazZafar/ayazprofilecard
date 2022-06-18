@@ -35,6 +35,8 @@
 </head>
 <body>
 
+    <div id="preloader"></div>
+
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ3PZWD"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -57,6 +59,15 @@
     </div>
 
 <script src="vanilla-tilt.js"></script>
+
+<script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function(){
+        loader.style.display = "none"
+    })
+
+</script>
 
 </body>
 </html>
